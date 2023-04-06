@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="icon" href="images/logo.png" type="images/logo.png">
+    <link rel="stylesheet" href="css/services.css">
+  </head>
+<body>
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Saimaya Beauty Parlor</span>
+</header>
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Saimaya<br>Beauty Parlor</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>  
+    <a href="servicesdata.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a>  
+    <a href="about1.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About us</a>
+  </div>
+</nav>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="w3_close side menu" id="myOverlay"></div>
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Services</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Nail Art.</b></h1>
+    <hr style="width:100px;border:5px solid rgb(255, 54, 54)" class="w3-round">
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/images1.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="images/images2.png" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="images/images3.png" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+    <div class="w3-half">
+      <img src="images/images4.png" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="images/images5.png" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="images/images6.png" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Mehndi.</b></h1>
+    <hr style="width:100px;border:5px solid red" class="w3-round">
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/images7.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="images/images8.png" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="images/images9.png" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+    <div class="w3-half">
+      <img src="images/images10.png" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="images/images11.png" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="images/images12.png" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-xxxlarge w3-text-red"><b>manicure pedicure.</b></h1>
+    <hr style="width:300px;border:5px solid red" class="w3-round">
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/images13.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="images/images14.png" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="images/images15.png" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+<div class="w3-half">
+      <img src="images/images16.png" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="images/images17.png" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="images/images18.png" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-images">
+      <p id="caption"></p>
+    </div>
+  </div>
+<div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Top Services</b></h1>
+    <hr style="width:300px;border:5px solid red" class="w3-round">
+    <p><b>Nail Art</b></p>
+    <ul style="padding-left: 20px;">
+      <li>Get ready to show off your unique style with our nail art services! Our expert technicians use the latest techniques and materials to create stunning designs that reflect your individuality.</li>
+      <li>Whether you prefer classic or trendy looks, we'll work with you to make sure you leave feeling confident and beautiful. </li>
+      <li>Come see us and discover the perfect nail art design to express yourself!</li>
+    </ul>
+  <br>
+    <p><b>Mehndi Art</b></p>
+    <ul style="padding-left: 20px;">
+      <li>Our mehndi artists are experts in creating beautiful and intricate henna designs that celebrate traditional Indian culture and modern trends.</li>
+      <li>Our artists can create stunning designs that range from classic bridal patterns to contemporary and artistic styles.</li>
+      <li>Whether you're looking to adorn your hands and feet for a wedding, festival, or just for fun, our mehndi artistry services will leave you feeling inspired and beautiful.</li>
+      <li>Visit us today to experience the beauty of mehndi art!</li>
+    </ul>
+</div>
+<div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red">
+      <b>Our Courses</b>  </h1>
+    <hr style="width:300px;border:5px solid red" class="w3-round">
+    <p><b>Basic to Advanced Diploma Course</b></p>
+    <ul style="padding-left: 20px;">
+      <li>This course is designed to teach the fundamentals of makeup artistry and progress to more advanced techniques.</li>
+      <li>Students will learn everything from color theory, facial anatomy, and skin preparation to corrective makeup, high-fashion looks, and special effects.</li>
+    </ul>
+    <hr>
+    <p><b>Proportional Makeup Course</b></p>
+    <ul style="padding-left: 20px;">
+      <li>This course focuses on the principles of proportion, balance, and symmetry in makeup application.</li>
+      <li>Students will learn how to create looks that flatter different face shapes and features, as well as how to enhance or correct imbalances.</li>
+    </ul>
+    <hr>
+    <p><b>Basic to Advanced Beauty Course</b></p>
+    <ul  style="padding-left: 20px;">
+      <li>This course covers a range of beauty treatments and services, including skincare, hair styling, nail care, and makeup application.</li>
+      <li>Students will learn techniques for basic maintenance, as well as more advanced skills for special occasions and editorial work.</li>
+    </ul> 
+</div>
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+</body>
+</html>
